@@ -412,6 +412,262 @@ class _AnaSayfaState extends State<AnaSayfa>
               ),
             ),
           ),
+           Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Material(
+              borderRadius: BorderRadius.circular(16),
+              elevation: 8,
+              color: Colors.grey.shade200,
+              child: Container(
+                height: 500,
+                width: double.infinity,
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: AssetImage('assets/model2.jpeg'),
+                                  fit: BoxFit.cover)),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width - 160,
+                          // genişliği dinamik hale getiriyoruz
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Abigail ",
+                                style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "12 mins ago",
+                                style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 18,
+                                    color: Colors.grey.shade500,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                            child: Icon(
+                              Icons.more_vert,
+                              color: Colors.grey,
+                              size: 40,
+                            ))
+                      ],
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      "This offical website features a ribbed knit zipper jacket that is"
+                          "modern and stylish. It looks very vemparament and is recommend to friends.",
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontFamily: 'Montserrat',
+                          color: Colors.grey),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: [
+                        InkWell(
+                          // Tıklanma özelliği kazandrımak için InkWell içine al
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) =>
+                                    Detail(imgPath: 'assets/model4.jpg')));
+                          },
+                          child:  Container(
+                              height: 200,
+                              width:
+                              (MediaQuery.of(context).size.width - 50) / 2,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  image: DecorationImage(
+                                      image:
+                                      AssetImage('assets/model4.jpg'),
+                                      fit: BoxFit.cover)),
+                            ),
+
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          children: [
+                            InkWell(
+                              // Tıklanma özelliği kazandrımak için InkWell içine al
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => Detail(
+                                        imgPath: 'assets/model3.jpeg')));
+                              },
+                              child: Container(
+                                  height: 95,
+                                  width: (MediaQuery.of(context).size.width -
+                                      100) /
+                                      2,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(5),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/model3.jpeg'),
+                                          fit: BoxFit.cover)),
+                                ),
+
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            InkWell(
+                              // Tıklanma özelliği kazandrımak için InkWell içine al
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) =>
+                                        Detail(imgPath: 'assets/model1.jpeg')));
+                              },
+                              child:    Container(
+                                  height: 95,
+                                  width:
+                                  (MediaQuery.of(context).size.width - 100) / 2,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(5),
+                                      image: DecorationImage(
+                                          image:
+                                          AssetImage('assets/model1.jpeg'),
+                                          fit: BoxFit.cover)),
+                                ),)
+                          ],
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 25,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.deepOrange.shade300),
+                          child: Center(
+                            child: Text(
+                              "# Louis",
+                              style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Container(
+                          height: 25,
+                          width: 75,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.deepOrange.shade300),
+                          child: Center(
+                            child: Text(
+                              "# Chloe",
+                              style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 15,
+                                  color: Colors.black),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 1,
+                      color: Colors.grey.shade700,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.send,
+                          size: 30,
+                          color: Colors.blue.shade700,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          "86",
+                          style: TextStyle(
+                              fontSize: 16, color: Colors.grey.shade700),
+                        ),
+                        SizedBox(
+                          width: 30,
+                        ),
+                        Icon(
+                          Icons.add_comment_outlined,
+                          size: 30,
+                          color: Colors.green.shade700,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          "321",
+                          style: TextStyle(
+                              fontSize: 16, color: Colors.grey.shade700),
+                        ),
+                        SizedBox(
+                          width: 130,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+
+                            Icon(
+                              Icons.favorite,
+                              size: 30,
+                              color: Colors.red.shade900,
+                            ),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(
+                              "1.7k",
+                              style: TextStyle(
+                                  fontSize: 16, color: Colors.grey.shade700),
+                            ),
+                          ],)
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
