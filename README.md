@@ -6,5 +6,5 @@ Kullanıcıların resimleri yükleyip birbirini takip edebildiği bir uygulaman�
 Fluttere özgü animasyonlar kullanılmıştır.
 
 <p align="center">
-  <img width="460" height="750" src="https://github.com/ferhatiltas/FashionApp/blob/master/asdm.gif">
+  <img width="460" height="900" src="https://github.com/ferhatiltas/FashionApp/blob/master/asdm.gif">
 </p>
