@@ -15,7 +15,7 @@ Fluttere özgü animasyonlar kullanılmıştır.
 $ git clone https://github.com/ferhatiltas/FashionApp
 
 # Access
-$ cd Notes-App
+$ cd FashionApp
 
 # Pull dependencies
 $ flutter pub get
