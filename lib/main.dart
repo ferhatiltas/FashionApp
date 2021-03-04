@@ -54,28 +54,44 @@ class _AnaSayfaState extends State<AnaSayfa>
               icon: Icon(
                 Icons.home_outlined,
                 color: Colors.black,
+<<<<<<< HEAD
                 size: 25,
+=======
+                size: 30,
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
               ),
             ),
             Tab(
               icon: Icon(
                 Icons.search_off,
                 color: Colors.black,
+<<<<<<< HEAD
                 size: 25,
+=======
+                size: 30,
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
               ),
             ),
             Tab(
               icon: Icon(
                 Icons.favorite_border,
                 color: Colors.black,
+<<<<<<< HEAD
                 size: 25,
+=======
+                size: 30,
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
               ),
             ),
             Tab(
               icon: Icon(
                 Icons.perm_identity_rounded,
                 color: Colors.black,
+<<<<<<< HEAD
                 size: 25,
+=======
+                size: 30,
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
               ),
             ),
           ],
@@ -285,6 +301,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                               // Tıklanma özelliği kazandrımak için InkWell içine al
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
+<<<<<<< HEAD
                                     builder: (context) => Detail(
                                         imgPath: 'assets/modelgrid2.jpeg')));
                               },
@@ -305,6 +322,24 @@ class _AnaSayfaState extends State<AnaSayfa>
                                 ),
                               ),
                             )
+=======
+                                    builder: (context) =>
+                                        Detail(imgPath: 'assets/modelgrid2.jpeg')));
+                              },
+                              child: Hero(// main.dart kısmında da tıklanan öğeyi Hero içine alırsak resimi açtıktan sonra geri gelirse resim güzel bir efekt ile yerine oturu tag: lar aynı olmalı
+                                tag: 'assets/modelgrid2.jpeg',
+                                child:   Container(
+                              height: 95,
+                              width:
+                                  (MediaQuery.of(context).size.width - 100) / 2,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  image: DecorationImage(
+                                      image:
+                                          AssetImage('assets/modelgrid2.jpeg'),
+                                      fit: BoxFit.cover)),
+                            ),),)
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                           ],
                         )
                       ],
@@ -393,6 +428,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                               fontSize: 16, color: Colors.grey.shade700),
                         ),
                         SizedBox(
+<<<<<<< HEAD
                           width: 130,
                         ),
                         Row(
@@ -413,6 +449,23 @@ class _AnaSayfaState extends State<AnaSayfa>
                             ),
                           ],
                         )
+=======
+                          width: 140,
+                        ),
+                        Icon(
+                          Icons.favorite,
+                          size: 30,
+                          color: Colors.red.shade900,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          "3.7k",
+                          style: TextStyle(
+                              fontSize: 16, color: Colors.grey.shade700),
+                        ),
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                       ],
                     )
                   ],
@@ -420,7 +473,11 @@ class _AnaSayfaState extends State<AnaSayfa>
               ),
             ),
           ),
+<<<<<<< HEAD
           Padding(
+=======
+           Padding(
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
             padding: const EdgeInsets.all(8.0),
             child: Material(
               borderRadius: BorderRadius.circular(16),
@@ -472,10 +529,17 @@ class _AnaSayfaState extends State<AnaSayfa>
                         ),
                         Expanded(
                             child: Icon(
+<<<<<<< HEAD
                           Icons.more_vert,
                           color: Colors.grey,
                           size: 40,
                         ))
+=======
+                              Icons.more_vert,
+                              color: Colors.grey,
+                              size: 40,
+                            ))
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                       ],
                     ),
                     SizedBox(
@@ -483,7 +547,11 @@ class _AnaSayfaState extends State<AnaSayfa>
                     ),
                     Text(
                       "This offical website features a ribbed knit zipper jacket that is"
+<<<<<<< HEAD
                       "modern and stylish. It looks very vemparament and is recommend to friends.",
+=======
+                          "modern and stylish. It looks very vemparament and is recommend to friends.",
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                       style: TextStyle(
                           fontSize: 13,
                           fontFamily: 'Montserrat',
@@ -501,6 +569,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                                 builder: (context) =>
                                     Detail(imgPath: 'assets/model4.jpg')));
                           },
+<<<<<<< HEAD
                           child: Container(
                             height: 200,
                             width: (MediaQuery.of(context).size.width - 50) / 2,
@@ -510,6 +579,20 @@ class _AnaSayfaState extends State<AnaSayfa>
                                     image: AssetImage('assets/model4.jpg'),
                                     fit: BoxFit.cover)),
                           ),
+=======
+                          child:  Container(
+                              height: 200,
+                              width:
+                              (MediaQuery.of(context).size.width - 50) / 2,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  image: DecorationImage(
+                                      image:
+                                      AssetImage('assets/model4.jpg'),
+                                      fit: BoxFit.cover)),
+                            ),
+
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                         ),
                         SizedBox(
                           width: 10,
@@ -520,6 +603,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                               // Tıklanma özelliği kazandrımak için InkWell içine al
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
+<<<<<<< HEAD
                                     builder: (context) =>
                                         Detail(imgPath: 'assets/model3.jpeg')));
                               },
@@ -534,6 +618,24 @@ class _AnaSayfaState extends State<AnaSayfa>
                                         image: AssetImage('assets/model3.jpeg'),
                                         fit: BoxFit.cover)),
                               ),
+=======
+                                    builder: (context) => Detail(
+                                        imgPath: 'assets/model3.jpeg')));
+                              },
+                              child: Container(
+                                  height: 95,
+                                  width: (MediaQuery.of(context).size.width -
+                                      100) /
+                                      2,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(5),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/model3.jpeg'),
+                                          fit: BoxFit.cover)),
+                                ),
+
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                             ),
                             SizedBox(
                               height: 10,
@@ -545,6 +647,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                                     builder: (context) =>
                                         Detail(imgPath: 'assets/model1.jpeg')));
                               },
+<<<<<<< HEAD
                               child: Container(
                                 height: 95,
                                 width:
@@ -557,6 +660,19 @@ class _AnaSayfaState extends State<AnaSayfa>
                                         fit: BoxFit.cover)),
                               ),
                             )
+=======
+                              child:    Container(
+                                  height: 95,
+                                  width:
+                                  (MediaQuery.of(context).size.width - 100) / 2,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(5),
+                                      image: DecorationImage(
+                                          image:
+                                          AssetImage('assets/model1.jpeg'),
+                                          fit: BoxFit.cover)),
+                                ),)
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                           ],
                         )
                       ],
@@ -650,6 +766,10 @@ class _AnaSayfaState extends State<AnaSayfa>
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                             Icon(
                               Icons.favorite,
                               size: 30,
@@ -663,8 +783,12 @@ class _AnaSayfaState extends State<AnaSayfa>
                               style: TextStyle(
                                   fontSize: 16, color: Colors.grey.shade700),
                             ),
+<<<<<<< HEAD
                           ],
                         )
+=======
+                          ],)
+>>>>>>> 6ed6082ee1435fdd2bda4caca491e63ec09016fb
                       ],
                     )
                   ],
